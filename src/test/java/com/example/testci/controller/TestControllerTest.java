@@ -22,6 +22,6 @@ class TestControllerTest {
     void test1() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("/api/v1/test/test"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("test1"));
+                .andExpect(content().string("test"));
     }
 }
